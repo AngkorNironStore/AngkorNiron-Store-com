@@ -1,44 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top-Up Store</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Header Section -->
     <header>
-        <h1>Welcome to the Top-Up Store</h1>
-        <p>Your go-to store for in-game top-ups!</p>
+        <div class="logo">
+            <h1>Top-Up Store</h1>
+        </div>
+        <div class="navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+        <div class="country-selector">
+            <select>
+                <option>EN</option>
+                <option>KH</option>
+            </select>
+        </div>
     </header>
 
-    <main>
-        <section class="product">
-            <h2>Select Your Diamonds</h2>
-            <form action="#" method="post">
-                <label for="diamonds">Choose Amount:</label>
-                <select id="diamonds" name="diamonds">
-                    <option value="50">50 Diamonds - $0.99</option>
-                    <option value="100">100 Diamonds - $1.99</option>
-                    <option value="500">500 Diamonds - $9.99</option>
-                </select>
+    <!-- Hero Section -->
+    <section id="hero">
+        <h2>Buy Your In-Game Top-Up Now!</h2>
+        <p>Quick and easy way to top up your favorite games</p>
+        <button>Shop Now</button>
+    </section>
 
-                <label for="playerID">Player ID:</label>
-                <input type="text" id="playerID" name="playerID" placeholder="Enter your Player ID" required>
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Top-Up Products</h2>
+        <div class="product">
+            <h3>50 Diamonds</h3>
+            <p>$0.99</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="product">
+            <h3>100 Diamonds</h3>
+            <p>$1.99</p>
+            <button>Buy Now</button>
+        </div>
+        <!-- Add more products as needed -->
+    </section>
 
-                <label for="serverID">Server ID:</label>
-                <input type="text" id="serverID" name="serverID" placeholder="Enter your Server ID" required>
-
-                <button type="submit">Purchase Now</button>
-            </form>
-        </section>
-    </main>
-
+    <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Top-Up Store. All rights reserved.</p>
     </footer>
 </body>
-
 </html>
